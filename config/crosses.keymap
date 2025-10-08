@@ -242,6 +242,41 @@
             key-positions = <23 13>;
             layers = <1>;
         };
+
+        combo_lclk2 {
+            bindings = <&mkp LCLK>;
+            key-positions = <30 31>;
+            slow-release;
+            layers = <0 1 2 3>;
+        };
+
+        combo_rclk2 {
+            bindings = <&mkp RCLK>;
+            key-positions = <31 32>;
+            slow-release;
+            layers = <0 1 2 3>;
+        };
+
+        combo_lclk3 {
+            bindings = <&mkp LCLK>;
+            key-positions = <34 33>;
+            slow-release;
+            layers = <0 1 2 3>;
+        };
+
+        combo_rclk3 {
+            bindings = <&mkp RCLK>;
+            key-positions = <35 34>;
+            slow-release;
+            layers = <0 1 2 3>;
+        };
+
+        combo_mclk2 {
+            bindings = <&mkp MCLK>;
+            key-positions = <25 15>;
+            slow-release;
+            layers = <0 1 2 3>;
+        };
     };
 
     keymap {
