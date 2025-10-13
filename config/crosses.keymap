@@ -307,7 +307,7 @@
 
         combo_comma {
             bindings = <&kp COMMA>;
-            key-positions = <23 13>;
+            key-positions = <11 21>;
             layers = <1>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -356,6 +356,24 @@
             layers = <0 1 2 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
+        };
+
+        combo_next2 {
+            bindings = <&mkp MB5>;
+            key-positions = <13 23>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
+        };
+
+        combo_prev2 {
+            bindings = <&mkp MB4>;
+            key-positions = <12 22>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0 1 2 3>;
         };
     };
 
