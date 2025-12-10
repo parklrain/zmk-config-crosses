@@ -175,7 +175,7 @@
 
         combo_prev {
             bindings = <&mkp MB4>;
-            key-positions = <16 26>;
+            key-positions = <5 15>;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -183,7 +183,7 @@
 
         combo_next {
             bindings = <&mkp MB5>;
-            key-positions = <17 27>;
+            key-positions = <6 16>;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -223,7 +223,7 @@
 
         combo_lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <26 27>;
+            key-positions = <25 15>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
@@ -232,7 +232,7 @@
 
         combo_rclk {
             bindings = <&mkp RCLK>;
-            key-positions = <28 26>;
+            key-positions = <26 16>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
@@ -241,16 +241,7 @@
 
         combo_mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <26 28 27>;
-            slow-release;
-            layers = <0 1 2 3>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
-        combo_scroll {
-            bindings = <&mo 1>;
-            key-positions = <28 27>;
+            key-positions = <26 15 25 16>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
@@ -349,15 +340,6 @@
             require-prior-idle-ms = <100>;
         };
 
-        combo_mclk2 {
-            bindings = <&mkp MCLK>;
-            key-positions = <25 15>;
-            slow-release;
-            layers = <0 1 2 3>;
-            timeout-ms = <50>;
-            require-prior-idle-ms = <100>;
-        };
-
         combo_next2 {
             bindings = <&mkp MB5>;
             key-positions = <13 23>;
@@ -375,6 +357,15 @@
             require-prior-idle-ms = <100>;
             layers = <0 1 2 3>;
         };
+
+        combo_mclk2 {
+            bindings = <&mkp MCLK>;
+            key-positions = <14 24>;
+            timeout-ms = <50>;
+            slow-release;
+            require-prior-idle-ms = <100>;
+            layers = <0 2 3>;
+        };
     };
 
     keymap {
@@ -382,9 +373,9 @@
 
         Default_layer {
             bindings = <
-&kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y      &kp U        &kp I        &kp O    &kp P
-&kp A  &kp S  &kp D      &kp F        &kp G        &kp H      &kp J        &kp K        &kp L    &kp SEMI
-&kp Z  &kp X  &kp C      &kp V        &kp B        &kp N      &kp M        &lt 5 COMMA  &kp DOT  &lt 6 SLASH
+&kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y      &kp U        &kp I       &kp O    &kp P
+&kp A  &kp S  &kp D      &kp F        &kp G        &kp H      &kp J        &kp K       &kp L    &kp SEMI
+&kp Z  &kp X  &kp C      &kp V        &kp B        &lt 5 N    &lt 6 M      &kp COMMA   &kp DOT  &kp SLASH
               &lt 1 ESC  &lt 2 SPACE  &lt 3 TAB    &lt 3 DEL  &lt 2 ENTER  &lt 1 BSPC
             >;
 
