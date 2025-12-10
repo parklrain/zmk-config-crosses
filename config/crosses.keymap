@@ -175,7 +175,7 @@
 
         combo_prev {
             bindings = <&mkp MB4>;
-            key-positions = <5 15>;
+            key-positions = <15 25>;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -183,7 +183,7 @@
 
         combo_next {
             bindings = <&mkp MB5>;
-            key-positions = <6 16>;
+            key-positions = <16 26>;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
             require-prior-idle-ms = <100>;
@@ -223,7 +223,7 @@
 
         combo_lclk {
             bindings = <&mkp LCLK>;
-            key-positions = <25 15>;
+            key-positions = <25 26>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
@@ -232,7 +232,7 @@
 
         combo_rclk {
             bindings = <&mkp RCLK>;
-            key-positions = <26 16>;
+            key-positions = <26 27>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
@@ -241,7 +241,7 @@
 
         combo_mclk {
             bindings = <&mkp MCLK>;
-            key-positions = <26 15 25 16>;
+            key-positions = <26 25 27>;
             slow-release;
             layers = <0 1 2 3>;
             timeout-ms = <50>;
